@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e70c0c;
+    background-image: url('back.jpeg');
+    background-size: cover;
+}
+h1:hover{
+    transform: scale(1.3);
+}
+
+.pricing-container {
+    text-align: center;
+    background: #12bfeb;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 90%;
+    transition: all 0.3s ease;
+}
+
+.pricing-toggles {
+    margin: 20px 0;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #1100ff;
+    color: #f40fb3;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: #0056b3;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+.plan {
+    display: none;
+    padding: 10px;
+    border: 1px solid #f50f0f;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.plan h2 {
+    margin: 0;
+}
+
+.currency-selector {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .pricing-container {
+        max-width: 60%;
+    }
+}
